@@ -13,8 +13,9 @@ A = zeros(1,N);
               c(i) = n;
               i=i+1;
         end
-    [rows,cols] = size(c);
+    [~,cols] = size(c);
     A(j) = cols;
     end
     plot(A)
+    title(['Collatz up to ', num2str(N)])
 end
